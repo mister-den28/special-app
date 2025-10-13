@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
 let clickCount = 0;
 let counterValue = 0;
 
-// Элементы DOM
 const clickBtn = document.getElementById('click-btn');
 const clickCounter = document.getElementById('click-counter');
 const themeToggle = document.getElementById('theme-toggle');
