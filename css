@@ -9,7 +9,7 @@ body {
     line-height: 1.6;
     background-color: #f5f5f5;
     color: #333;
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
 }
 
 body.dark-theme {
