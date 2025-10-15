@@ -18,7 +18,7 @@ body.dark-theme {
 }
 
 header {
-    background: linear-gradient(135deg, #4CAF50, #45a049);
+    background: linear-gradient(135deg, #4CAF50, #33a939);
     color: white;
     padding: 2rem;
     text-align: center;
@@ -184,7 +184,7 @@ footer {
     opacity: 0.8;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     nav {
         flex-direction: column;
         gap: 0.5rem;

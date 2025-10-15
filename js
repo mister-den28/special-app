@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
 let clickCount = 0;
 let counterValue = 0;
 
-// Элементы DOM
 const clickBtn = document.getElementById('click-btn');
 const clickCounter = document.getElementById('click-counter');
 const themeToggle = document.getElementById('theme-toggle');
@@ -71,7 +70,6 @@ sendBtn.addEventListener('click', function() {
     }
 });
 
-// Счетчик
 decreaseBtn.addEventListener('click', function() {
     counterValue--;
     updateCounter();
@@ -85,7 +83,6 @@ increaseBtn.addEventListener('click', function() {
 function updateCounter() {
     countDisplay.textContent = counterValue;
     
-    // Изменение цвета в зависимости от значения
     if (counterValue > 0) {
         countDisplay.style.color = '#4CAF50';
     } else if (counterValue < 0) {
@@ -117,7 +114,6 @@ function updateTime() {
     currentTime.textContent = `${dateString} | ${timeString}`;
 }
 
-// LocalStorage функции
 function saveToLocalStorage() {
     const state = {
         clickCount,
@@ -156,7 +152,6 @@ function loadFromLocalStorage() {
     }
 }
 
-// Плавная прокрутка для навигационных ссылок
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
@@ -172,10 +167,8 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Добавляем обработчик для клавиатуры
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
-        // Сброс при нажатии Escape
         if (confirm('Сбросить все счетчики?')) {
             clickCount = 0;
             counterValue = 0;
