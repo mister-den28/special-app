@@ -9,7 +9,7 @@ body {
     line-height: 1.6;
     background-color: #f5f5f5;
     color: #333;
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
 }
 
 body.dark-theme {
@@ -18,7 +18,7 @@ body.dark-theme {
 }
 
 header {
-    background: linear-gradient(135deg, #4CAF50, #45a049);
+    background: linear-gradient(135deg, #4CAF50, #33a939);
     color: white;
     padding: 2rem;
     text-align: center;
